@@ -1,0 +1,171 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[UTF8]{ctex}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\baselinestretch}{1.0}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\parskip}{0em}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    {#1}
+  }
+}
+
+\newcommand{\resumeItemsss}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-4.0pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItemsss{#1}{#2}\vspace{-1pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://github.com/zhiaozhou/}{\Large 周智奥}} & Email : \href{mailto:zz1749@nyu.edu}{zz1749@nyu.edu}\\
+  \href{http://zhiaozhou.top/}{http://zhiaozhou.top/} & 手机 : 18917630007 \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{教育}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {佐治亚理工学院}{远程授课（授予On-Campus学位）}
+      {计算机科学（机器学习）硕士}{2018/08 -- 2022/06}
+    \resumeSubheading
+      {纽约大学}{纽约，美国}
+      {城市数据科学硕士 \hspace{0.55cm} GPA: 3.57}{2017/08 -- 2018/08}
+      
+      {- 主修课程: 应用数据科学, 机器学习, 深度学习, 城市空间分析, 实时大数据分析}
+    \resumeSubheading
+      {上海财经大学}{上海，中国}
+      {精算学，经济学学士}{2013/09 -- 2017/06}
+      
+      {- 主修课程: 财务/管理会计, 宏观/微观经济学, 公司金融, 投资学, 金融建模, 随机过程, 生存模型}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{经历}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {纽约大学}{纽约，美国}
+      {研究助理}{2018/06 - 2018/08}
+      \resumeItemListStart
+        \resumeItem{撰写Twitter爬虫程序对飓风Harvey期间所有Tweets进行抓取}{}
+        \resumeItem{训练带嵌入矩阵的LSTM神经网络模型，识别飓风Harvey期间的所有虚假Tweets}{}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {国泰君安证券}{上海，中国}
+      {量化研究实习，网络金融部}{2017/12 - 2018/01}
+      \resumeItemListStart
+        \resumeItem{根据买方及卖方各类金工研报研究开发适合长尾散户客户的量化策略}{}
+        \resumeItem{完成4个事件驱动类策略（高管增持，公司增持，高送转预测，年报披露公告），1个ROE价值投资策略}{}
+        \resumeItem{完成其他小组提出的量化需求}{}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {东方证券}{上海，中国}
+      {研究员助理，战略与策略组，研究所}{2017/02 - 2017/05}
+      \resumeItemListStart
+        \resumeItem{开发每日日报模板，并负责日报（每日市场策略跟踪）的撰写，包括每日策略重点指标的跟踪，市场复盘，对重点新闻的点评及大势研判，至今已完成20篇日报，每日阅读量在200以上，最高628次}{}
+        \resumeItem{完成多个策略方面课题，包括国外险资举牌监管与国内的对比等。}{}
+        \resumeItem{协助研究员完成多个策略深度报告，包括一带一路，粤港澳大湾区，价值股研究等等}{}
+        \resumeItem{协助研究员完成周报及季报的撰写，包括对前期市场总结及预期大势研判}{}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {海通证券}{上海，中国}
+      {研究员助理，有色金属组，研究所}{2016/12 - 2017/02}
+      \resumeItemListStart
+        \resumeItem{负责有色金属日报的撰写，包括对当日重点事件进行点评并判断其对有色金属行业影响}{}
+        \resumeItem{独立完成一篇有色金属标的的深度报告}{}
+        \resumeItem{负责每日对客户进行邮件外发及每日金属价格数据库的维护}{}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{项目}
+  \resumeSubHeadingListStart
+    \resumeSubItem{实时交通密度计量器}
+      {通过训练一个Faster RCNN with Inception ResNet V2目标检测模型并运用在任意一个交通摄像头上来计算相应路段的交通密度}
+    \resumeSubItem{重叠数字图像分割}
+      {通过训练一个CapsNet神经网络模型来分割两个高度重叠的数字图像，并与传统卷积神经网络模型进行比较}
+    \resumeSubItem{基于微博和百度新闻情感分析的A股股价预测模型}
+      {通过训练一个神经网络回归模型，使用股票的各类财务因子及相应上市公司的相关微博及百度新闻的舆情指数，进行次日平均股价涨幅的预测}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{编程技术}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{语言}{: Python, R, HTML, CSS, JavaScript}
+     \hfill
+     \textbf{技术}{: Tensorflow, Keras, Hive, HBase, Spark}
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
